@@ -1,0 +1,12 @@
+
+.img1, .img2, .img3, .img4{
+    display: none;
+}
+
+#slide1:checked ~ .img1,
+#slide2:checked ~ .img2,
+#slide3:checked ~ .img3,
+#slide4:checked ~ .img4{
+    display: block;
+}
+
