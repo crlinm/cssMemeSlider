@@ -10,6 +10,10 @@ input{
     display: none;
 }
 
+.p1, .p2, .p3, .p4{
+    display: none;
+}
+
 #slide1:checked ~ .img1,
 #slide2:checked ~ .img2,
 #slide3:checked ~ .img3,
@@ -23,10 +27,6 @@ input{
 
 .img-slider>img{
     height: 40rem;
-}
-
-body{
-    align-items: center;
 }
 
 label {
@@ -48,4 +48,11 @@ label:hover{
 #slide3:checked ~ label[for='slide3'],
 #slide4:checked ~ label[for='slide4']{
     background: white;
+}
+
+#slide1:checked ~ .p1,
+#slide2:checked ~ .p2,
+#slide3:checked ~ .p3,
+#slide4:checked ~ .p4{
+    display: block;
 }
