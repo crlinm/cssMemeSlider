@@ -1,52 +1,63 @@
 body{
-    background-color:rgb(170, 173, 176)
+    background-color:rgb(170, 173, 176);
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr repeat(4, min-content);
+    max-width: 30vw;
+    margin-inline: auto;
+    align-items: baseline;
 }
 
 input{
-    display: none;
+    grid-row: 2;
+}
+
+.img-slider{
+    place-self: center;
 }
 
 .img1, .img2, .img3, .img4{
-    display: none;
+    visibility: hidden;
+    grid-row: 1;
+    grid-column: 1/-1;
 }
 
 .p1, .p2, .p3, .p4{
     display: none;
+    grid-row: 2;
+    grid-column: 1;
 }
 
 #slide1:checked ~ .img1,
 #slide2:checked ~ .img2,
 #slide3:checked ~ .img3,
 #slide4:checked ~ .img4{
-    display: block;
-}
-
-.img-slider{
-    align-items: center;
+    visibility: visible;
 }
 
 .img-slider>img{
-    height: 40rem;
+    max-width: 30vw;
+    text-align: center;
 }
 
-label {
+input{
     display: inline-block;
     border-radius: 1rem;
     width: 1rem;
     height: 1rem;
     border: solid 2px blue;
     background: blue;
+    appearance: none;
 }
 
-label:hover{
+input:hover{
     border: solid 2px aqua;
     background: aqua;
 }
 
-#slide1:checked ~ label[for='slide1'],
-#slide2:checked ~ label[for='slide2'],
-#slide3:checked ~ label[for='slide3'],
-#slide4:checked ~ label[for='slide4']{
+input:checked{
     background: white;
 }
 
