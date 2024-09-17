@@ -1,4 +1,8 @@
 
+input{
+    display: none;
+}
+
 .img1, .img2, .img3, .img4{
     display: none;
 }
@@ -10,3 +14,30 @@
     display: block;
 }
 
+.img-slider{
+    align-items: center;
+}
+
+.img-slider>img{
+    height: 40rem;
+}
+
+body{
+    align-items: center;
+}
+
+label {
+    display: inline-block;
+    border-radius: 1rem;
+    width: 1rem;
+    height: 1rem;
+    border: solid 2px blue;
+    background: blue;
+}
+
+#slide1:checked ~ label[for='slide1'],
+#slide2:checked ~ label[for='slide2'],
+#slide3:checked ~ label[for='slide3'],
+#slide4:checked ~ label[for='slide4']{
+    background: white;
+}
