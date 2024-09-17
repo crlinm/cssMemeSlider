@@ -42,13 +42,13 @@ input{
     border-radius: 1rem;
     width: 1rem;
     height: 1rem;
-    border: solid 2px blue;
+    border: solid 0.15rem blue;
     background: blue;
     appearance: none;
 }
 
 input:hover{
-    border: solid 2px aqua;
+    border: solid 0.15rem aqua;
     background: aqua;
     cursor: pointer;
 }
@@ -82,4 +82,30 @@ p:hover{
     user-select: auto;
     /* transform: none; */
     pointer-events: auto;
+}
+
+
+@media (max-width: 30rem){
+    .wrapper{
+        grid-template-columns: 1fr repeat(4, min-content) 1fr;
+    }
+
+    .img1, .img2, .img3, .img4{
+        grid-row: 1;
+        grid-column: 1/-1;
+    }
+
+    .empty{
+        grid-row: 2;
+    }
+
+    input{
+        grid-row: 2;
+        justify-items: center;
+    }
+
+    .p1, .p2, .p3, .p4{
+        grid-row: 3;
+        grid-column: 1/-1;
+    }
 }
