@@ -1,3 +1,6 @@
+body{
+    background-color:rgb(170, 173, 176)
+}
 
 input{
     display: none;
@@ -33,6 +36,11 @@ label {
     height: 1rem;
     border: solid 2px blue;
     background: blue;
+}
+
+label:hover{
+    border: solid 2px aqua;
+    background: aqua;
 }
 
 #slide1:checked ~ label[for='slide1'],
