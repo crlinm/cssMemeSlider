@@ -16,10 +16,11 @@ input{
 
 .img-slider{
     place-self: center;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
 .img1, .img2, .img3, .img4{
-    visibility: hidden;
     grid-row: 1;
     grid-column: 1/-1;
 }
@@ -34,7 +35,7 @@ input{
 #slide2:checked ~ .img2,
 #slide3:checked ~ .img3,
 #slide4:checked ~ .img4{
-    visibility: visible;
+    opacity: 1;
 }
 
 .img-slider>img{
