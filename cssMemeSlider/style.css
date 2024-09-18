@@ -40,23 +40,25 @@ input{
 input{
     display: inline-block;
     border-radius: 1rem;
-    width: 1rem;
-    height: 1rem;
-    border: solid 0.15rem blue;
-    background: blue;
+    width: 2rem;
+    height: 2rem;
+    /* border: solid 0.15rem transparent; */
+    /* background: blue; */
     appearance: none;
-    margin: 0.3rem;
-    padding: 0.3rem;
+    outline: solid 0.2rem blue;
+    outline-offset: -0.5rem;
 }
 
 input:hover{
-    border: solid 0.15rem aqua;
+    /* border: solid 0.15rem aqua; */
     background: aqua;
     cursor: pointer;
 }
 
 input:checked{
-    background: white;
+    /* background: white; */
+    outline-width: 0.75rem;
+    outline-offset: -1rem;
 }
 
 .p1, .p2, .p3, .p4{
