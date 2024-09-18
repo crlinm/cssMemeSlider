@@ -45,6 +45,8 @@ input{
     border: solid 0.15rem blue;
     background: blue;
     appearance: none;
+    margin: 0.3rem;
+    padding: 0.3rem;
 }
 
 input:hover{
@@ -88,6 +90,11 @@ p:hover{
 @media (max-width: 30rem){
     .wrapper{
         grid-template-columns: 1fr repeat(4, min-content) 1fr;
+        max-width: 90vw;
+    }
+
+    .img-slider>img{
+        max-width: 90vw;
     }
 
     .img1, .img2, .img3, .img4{
